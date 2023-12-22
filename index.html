@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="card container">
+      <div class="app-heading">
+        <h1>To do app</h1>
+      </div>
+
+      <div class="form-container">
+        <form class="add-todo-form" action="">
+          <div class="input-div">
+            <input
+              id="add-input-field"
+              type="text"
+              placeholder="Input your todo"
+            />
+            <button id="add-todo-btn">
+              <svg
+                id="add-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12H18"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 18L12 6"
+                  stroke="#FFFFFF"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <button class="hidden" id="save-edit-btn">Save Edit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="list-container">
+        <div class="error-container hidden">
+          <p class="error-message">Invalid input, please put in a Todo</p>
+        </div>
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
